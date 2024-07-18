@@ -1,0 +1,65 @@
+
+
+.gray-background{
+    -fx-background-color: #636566;
+}
+.light-gray-background{
+    -fx-background-color: #A0A0A0;
+}
+.dark-background{
+    -fx-background-color: #000000F0;
+}
+
+.white-background{
+    -fx-background-color: #FFFFFF;
+}
+.blue-background{
+    -fx-background-color: #2c69cf;
+}
+.transparent-background{
+    -fx-background-color: rgba(0,0,0,0);
+}
+.your-listView-id{
+    -fx-scrollbar-style: none;
+}
+.radius{
+    -fx-background-radius: 100px;
+}
+.light-gray-background{
+    -fx-background-color: #DADADA ;
+}
+.light-blue-background{
+    -fx-background-color: #35A1EB;
+}
+.blue-facebook-background{
+    -fx-background-color: #0A71FF;
+}
+.blue-facebook2-background{
+    -fx-background-color: #4596E5;
+}
+.gray-light-background{
+    -fx-background-color: #EDF1F4;
+}
+.purple-background{
+    -fx-background-color:#5440E5;
+}
+.incoming-bubble{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 20px;
+}
+.special-gray{
+    -fx-background-color: #e7e7e7;
+}
+.list-border{
+    -fx-border-color: #bebbbb;
+}
+
+.list-view .scroll-bar:vertical, .list-view .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+    -fx-min-width: 0;
+    -fx-min-height: 0;
+    -fx-max-width: 0;
+    -fx-max-height: 0;
+}

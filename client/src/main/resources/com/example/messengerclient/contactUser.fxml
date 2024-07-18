@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="66.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.messengerclient.ContactUser">
+   <children>
+      <ImageView fx:id="avatar" fitHeight="60.0" fitWidth="60.0" onMouseClicked="#action" pickOnBounds="true" preserveRatio="true">
+          <clip>
+              <Circle centerX="30" centerY="30" radius="30" />
+          </clip>
+      </ImageView>
+      <Label fx:id="nameLabel" layoutX="77.0" layoutY="-1.0" prefHeight="39.0" prefWidth="223.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Circle fx:id="statusIcon" fill="DODGERBLUE" layoutX="77.0" layoutY="46.0" radius="5.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label fx:id="statusLabel" layoutX="95.0" layoutY="38.0" prefHeight="17.0" prefWidth="99.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+   </children>
+</Pane>

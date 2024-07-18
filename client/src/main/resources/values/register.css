@@ -1,0 +1,9 @@
+.registerButton{
+    -fx-background-color: #502779;
+    -fx-border: #cccccc;
+    -fx-background-radius: 10;
+}
+.returnButton{
+    -fx-background-color: #f8aad1;
+    -fx-background-radius: 10;
+}

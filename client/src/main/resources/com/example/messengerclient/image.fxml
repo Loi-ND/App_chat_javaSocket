@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.ImageView?>
+
+
+<ImageView fx:id="image" fitHeight="273.0" fitWidth="288.0" onMouseClicked="#showImage" pickOnBounds="true" preserveRatio="true" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.messengerclient.viewImage" />

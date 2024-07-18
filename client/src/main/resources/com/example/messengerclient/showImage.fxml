@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#returnToChatBox" prefHeight="500.0" prefWidth="880.0" styleClass="mainPane" stylesheets="@../../../values/showImage.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.messengerclient.ShowImage">
+   <children>
+      <ImageView fx:id="displayImage" fitHeight="390.0" fitWidth="468.0" layoutX="206.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="downLoadImage" layoutX="777.0" layoutY="14.0" mnemonicParsing="false" onAction="#downloadImage" styleClass="transparent-background" stylesheets="@../../../values/boxChat.css">
+         <graphic>
+            <ImageView fitHeight="36.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/png-transparent-download-downloading-save-basic-user-interface-icon-thumbnail.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+   </children>
+</Pane>

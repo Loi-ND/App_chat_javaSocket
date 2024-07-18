@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.messengerclient.Controller">
+   <left>
+      <HBox prefHeight="600.0" prefWidth="320.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox alignment="CENTER" opacity="0.91" prefHeight="600.0" prefWidth="60.0" styleClass="purple-background" stylesheets="@../../../values/boxChat.css">
+               <children>
+                  <Pane prefHeight="376.0" prefWidth="59.0" VBox.vgrow="ALWAYS" />
+                  <Pane prefHeight="292.0" prefWidth="59.0" VBox.vgrow="ALWAYS">
+                     <children>
+                        <StackPane layoutX="-1.0" layoutY="168.0" prefHeight="60.0" prefWidth="60.0" styleClass="gray-background">
+                           <children>
+                              <Button fx:id="Button_logout" mnemonicParsing="false" prefHeight="60.0" prefWidth="60.0" styleClass="purple-background" textFill="#3399f0" />
+                              <ImageView fitHeight="55.0" fitWidth="52.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/icons8-log-out-96.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </Pane>
+                  <Pane nodeOrientation="LEFT_TO_RIGHT" prefHeight="115.0" prefWidth="59.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#updateAvatar" prefHeight="61.0" prefWidth="60.0" styleClass="transparent-background" stylesheets="@../../../values/boxChat.css" />
+                        <ImageView fitHeight="39.0" fitWidth="39.0" layoutX="10.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../images/icons8-setting-48.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+            <VBox prefHeight="642.0" prefWidth="262.0" styleClass="white-background" stylesheets="@../../../values/boxChat.css">
+               <children>
+                  <Pane prefHeight="82.0" prefWidth="266.0" styleClass="transparent-background" stylesheets="@../../../values/boxChat.css">
+                     <children>
+                        <HBox alignment="TOP_CENTER" layoutX="25.0" layoutY="24.0" opacity="0.91" prefHeight="31.0" prefWidth="202.0" stylesheets="@../../../values/boxChat.css">
+                           <styleClass>
+                              <String fx:value="purple-background" />
+                              <String fx:value="radius" />
+                           </styleClass>
+                           <children>
+                              <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact person" wrappingWidth="189.6367141753435">
+                                 <font>
+                                    <Font name="Arial Bold" size="25.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </HBox>
+                        <Line endX="-99.5" endY="74.5" layoutX="360.0" layoutY="5.0" startX="-99.5" startY="-4.5" stroke="#bebbbb" strokeWidth="2.25" />
+                     </children>
+                  </Pane>
+                  <ListView fx:id="list_user" prefHeight="498.0" prefWidth="270.0" stylesheets="@../../../values/boxChat.css">
+                     <styleClass>
+                        <String fx:value="transparent-background" />
+                        <String fx:value="your-listView-id" />
+                        <String fx:value="list-border" />
+                     </styleClass>
+                  </ListView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </left>
+   <center>
+      <VBox prefHeight="650.0" prefWidth="900.0" stylesheets="@../../../values/boxChat.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="84.0" prefWidth="492.0" styleClass="white-background" stylesheets="@../../../values/boxChat.css">
+               <children>
+                  <Pane prefHeight="82.0" prefWidth="665.0">
+                     <children>
+                        <HBox fx:id="hbox_username" alignment="CENTER_LEFT" layoutX="-1.0" layoutY="-1.0" prefHeight="84.0" prefWidth="667.0" styleClass="transparent-background" stylesheets="@../../../values/boxChat.css">
+                           <children>
+                              <StackPane fx:id="userStack" prefHeight="86.0" prefWidth="300.0">
+                                 <HBox.margin>
+                                    <Insets left="30.0" />
+                                 </HBox.margin></StackPane>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="80.0" prefWidth="21.0" />
+                  <Pane prefHeight="84.0" prefWidth="80.0" />
+                  <ImageView fitHeight="30.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/icons8-call-60.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="30.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/icons8-video-call-60.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" layoutX="788.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="35.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../images/448344346_2357076857819983_3657458369997927444_n%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="20.0" layoutX="835.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <StackPane fx:id="componentStack" prefHeight="500.0" prefWidth="890.0">
+               <children>
+                  <ScrollPane fx:id="sp_main" prefHeight="500.0" prefWidth="900.0" styleClass="transparent-background" stylesheets="@../../../values/boxChat.css">
+                     <content>
+                        <VBox fx:id="vbox_messages" prefHeight="494.0" prefWidth="856.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </StackPane>
+            <HBox alignment="CENTER" prefHeight="73.0" prefWidth="892.0" styleClass="white-background" stylesheets="@../../../values/boxChat.css">
+               <children>
+                  <StackPane prefHeight="52.0" prefWidth="66.0">
+                     <children>
+                        <Button fx:id="button_choose_img" onAction="#chooseImage" prefHeight="50.0" prefWidth="50.0" styleClass="transparent-background" stylesheets="@../../../values/boxChat.css">
+                           <graphic>
+                              <ImageView fitHeight="36.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/icons8-picture-96 (2).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </StackPane>
+                  <TextField fx:id="tf_message" onAction="#textFillMessage" prefHeight="38.0" prefWidth="754.0" promptText="Type something to send..." stylesheets="@../../../values/boxChat.css">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="radius" />
+                        <String fx:value="gray-light-background" />
+                     </styleClass>
+                  </TextField>
+                  <StackPane prefHeight="52.0" prefWidth="50.0">
+                     <children>
+                        <Button fx:id="button_send" mnemonicParsing="false" onAction="#sendMessage" prefHeight="50.0" prefWidth="50.0" styleClass="transparent-background" stylesheets="@../../../values/boxChat.css">
+                           <graphic>
+                              <ImageView fitHeight="28.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../images/icons8-send-96 (1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </StackPane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
